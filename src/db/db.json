@@ -1,0 +1,31 @@
+{
+  "propostas": [
+    {
+      "id": 1,
+      "cpf": "66636955090",
+      "data": "2025-02-24T18:11:44.833Z",
+      "login": "digitador1@example.com",
+      "nome": "Lucas Oliveira",
+      "status": "Finalizada",
+      "valor": 7526.22
+    },
+    {
+      "id": 2,
+      "cpf": "66636955090",
+      "data": "2025-02-24T18:11:44.833Z",
+      "login": "digitador2@example.com",
+      "nome": "Lucas Oliveira",
+      "status": "Andamento",
+      "valor": 7526.22
+    },
+    {
+      "id": 3,
+      "nome": "João Souza",
+      "login": "digitador3@example.com",
+      "status": "Criado",
+      "cpf": "33021861423",
+      "data": "2025-02-24T19:00:38.570Z",
+      "valor": 5611.77
+    }
+  ]
+}
