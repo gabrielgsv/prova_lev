@@ -15,17 +15,53 @@
       "data": "2025-02-24T18:11:44.833Z",
       "login": "digitador2@example.com",
       "nome": "Lucas Oliveira",
-      "status": "Andamento",
+      "status": "Finalizada",
       "valor": 7526.22
     },
     {
       "id": 3,
       "nome": "João Souza",
       "login": "digitador3@example.com",
-      "status": "Criado",
+      "status": "Finalizada",
       "cpf": "33021861423",
       "data": "2025-02-24T19:00:38.570Z",
       "valor": 5611.77
+    },
+    {
+      "id": 4,
+      "nome": "Lucas Martins",
+      "login": "digitador4@example.com",
+      "status": "Finalizada",
+      "cpf": "91650026951",
+      "data": "2025-04-03T00:24:35.400Z",
+      "valor": 552.97
+    },
+    {
+      "id": 5,
+      "nome": "Gustavo Souza",
+      "login": "digitador5@example.com",
+      "status": "Finalizada",
+      "cpf": "37989271540",
+      "data": "2025-04-03T00:25:35.414Z",
+      "valor": 3201.52
+    },
+    {
+      "id": 6,
+      "nome": "Juliana Oliveira",
+      "login": "digitador6@example.com",
+      "status": "Andamento",
+      "cpf": "93646078995",
+      "data": "2025-04-03T00:26:35.417Z",
+      "valor": 3931.62
+    },
+    {
+      "id": 7,
+      "nome": "Juliana Costa",
+      "login": "digitador7@example.com",
+      "status": "Criado",
+      "cpf": "08228333951",
+      "data": "2025-04-03T00:27:35.420Z",
+      "valor": 2680.5
     }
   ]
 }
