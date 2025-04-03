@@ -7,10 +7,12 @@
     "@testing-library/jest-dom": "^6.6.3",
     "@testing-library/react": "^16.2.0",
     "@testing-library/user-event": "^13.5.0",
+    "@types/axios": "^0.9.36",
     "@types/file-saver": "^2.0.7",
     "@types/jest": "^27.5.2",
     "@types/react": "^19.0.10",
     "@types/react-dom": "^19.0.4",
+    "axios": "^1.8.4",
     "cors": "^2.8.5",
     "express": "^4.21.2",
     "file-saver": "^2.0.5",
@@ -21,10 +23,10 @@
     "xlsx": "^0.18.5"
   },
   "scripts": {
-    "start": "concurrently \"react-scripts start\" \"json-server --watch src/db/db.json --port 5000\" \"ts-node src/updateDB.ts\"",
+    "start": "concurrently \"react-scripts start\" \"npx json-server --watch src/db/db.json --port 5000\" \"ts-node src/updateDB.ts\"",
     "server": "react-scripts start",
     "update": "ts-node src/updateDB.ts",
-    "json-server": "json-server --watch src/db/db.json --port 5000"
+    "json-server": "npx json-server --watch src/db/db.json --port 5000"
   },
   "eslintConfig": {
     "extends": [
