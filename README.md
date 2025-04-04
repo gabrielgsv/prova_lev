@@ -64,6 +64,3 @@ Obs.:
 - Node.js
 - Playwright (para automação/RPA)
 - Docker (para containerização)
-
-## ⏱️ Tempo de Execução
-O processo completo (API + DB + RPA) leva aproximadamente 2 minutos para ser concluído.
