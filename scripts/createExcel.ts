@@ -36,7 +36,15 @@ function exportToExcel(propostas: Proposta[]): string {
     throw new Error('Nenhuma proposta encontrada para exportar');
   }
 
-  const ws = XLSX.utils.json_to_sheet(propostas);
+  const data = propostas.map(p => ({
+    Nome: p.nome,
+    Login: p.login,
+    Status: p.status,
+    CPF: p.cpf,
+    Data: p.data,
+    Valor: p.valor
+  }));
+  const ws = XLSX.utils.json_to_sheet(data);
   const wb = XLSX.utils.book_new();
   XLSX.utils.book_append_sheet(wb, ws, "Propostas");
   
