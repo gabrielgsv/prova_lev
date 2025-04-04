@@ -53,7 +53,7 @@ export default function App() {
     return (
         <div className="flex flex-col items-center p-4">
             <h1 className="text-xl font-bold mb-4">Upload de Planilha</h1>
-            <input type="file" accept=".xlsx" onChange={handleFileUpload} className="mb-4" />
+            <input type="file" accept=".xlsx" onChange={handleFileUpload} className="mb-4" id="fileInput" />
 
             {propostas.length > 0 && (
                 <>
