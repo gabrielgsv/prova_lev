@@ -43,7 +43,9 @@ npx playwright install
 npm run automation
 ```
 
-Obs.: Se preferir, você pode excluir os arquivos 'propostas.xlsx' e 'upload_screenshot.png' antes de executar o script de automação.
+Obs.: 
+- Se preferir, você pode excluir os arquivos 'propostas.xlsx' e 'upload_screenshot.png' antes de executar o script de automação.
+- Acesse o banco de dados através do dbgate: http://localhost:4050/
 
 ## 📂 Estrutura de arquivos
 - `/scripts/index.ts` - Script principal de banco de dados e automação
