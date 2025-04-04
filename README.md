@@ -13,7 +13,7 @@ Implementei uma solução completa em TypeScript que:
 ### Pré-requisitos
 - Node.js v16+
 - Docker instalado
-- NPM ou Yarn
+- NPM ou Bun
 
 ### Passo a passo
 
@@ -23,7 +23,7 @@ git clone https://github.com/gabrielgsv/prova_lev
 cd prova_lev
 ```
 
-2. Instale as dependências (usei --legacy-peer-deps para resolver conflitos):
+2. Instale as dependências:
 ```bash
 npm install --legacy-peer-deps
 ```
@@ -42,6 +42,8 @@ npx playwright install
 ```bash
 npm run automation
 ```
+
+Obs.: Se preferir, você pode excluir os arquivos 'propostas.xlsx' e 'upload_screenshot.png' antes de executar o script de automação.
 
 ## 📂 Estrutura de arquivos
 - `/scripts/index.ts` - Script principal de banco de dados e automação
