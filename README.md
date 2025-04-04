@@ -1,34 +1,26 @@
-# Implementação do Teste Técnico - Integração API, Banco e RPA
+# Implementação do Teste Técnico - Integração API, Banco de Dados e RPA
 
-## 📝 Sobre a Minha Solução
+## 📝 Sobre a solução
 
 Implementei uma solução completa em TypeScript que:
 
 1. Consome a API de propostas em `http://localhost:5000/propostas`
-2. Armazena os dados em um banco de dados JSON (usando um arquivo `db.json`)
-3. Automatiza o preenchimento dos dados no frontend usando RPA com Puppeteer
+2. Armazena os dados em um banco de dados PostgreSQL
+3. Automatiza o preenchimento dos dados no frontend usando RPA com Playwright
 
-## 🛠️ Tecnologias Utilizadas
-
-- TypeScript
-- Node.js
-- Express (para mock da API)
-- Puppeteer (para automação/RPA)
-- Docker (para containerização)
-
-## 🔧 Como Executar o Projeto
+## 🔧 Como executar o projeto
 
 ### Pré-requisitos
 - Node.js v16+
 - Docker instalado
 - NPM ou Yarn
 
-### Passo a Passo
+### Passo a passo
 
 1. Clone o repositório e acesse a pasta:
 ```bash
-git clone https://github.com/KenidyCorrea/lev-teste.git
-cd lev-teste
+git clone https://github.com/gabrielgsv/prova_lev
+cd prova_lev
 ```
 
 2. Instale as dependências (usei --legacy-peer-deps para resolver conflitos):
@@ -41,26 +33,33 @@ npm install --legacy-peer-deps
 docker-compose up
 ```
 
-4. Execute o script de automação completo:
+4. Execute o script de configuração do Playwright:
+```bash
+npx playwright install
+```
+
+5. Execute o script de automação completo:
 ```bash
 npm run automation
 ```
 
-5. (Opcional) Para acessar o frontend manualmente:
-```bash
-npm start
-```
+## 📂 Estrutura de arquivos
+- `/scripts/index.ts` - Script principal de banco de dados e automação
+- `/src/App.tsx` - Página inicial do frontend em React
+- `docker-compose.yml` - Configuração dos containers
 
-## 📌 Detalhes da Implementação
+## 🐋 Estrutura de containers
+- `prova_lev-frontend` - http://localhost:3000/
+- `prova_lev-json-server` - http://localhost:5000/
+- `dbgate/dbgate` - http://localhost:4050/
+- `postgres:15` - http://localhost:5432/
 
-- **API**: Criei um mock simples com Express que retorna dados de propostas
-- **Banco de Dados**: Optei por um arquivo JSON simples para armazenamento
-- **RPA**: Implementei usando Puppeteer para preencher automaticamente o formulário no frontend
+## 🛠️ Tecnologias utilizadas
+
+- TypeScript
+- Node.js
+- Playwright (para automação/RPA)
+- Docker (para containerização)
 
 ## ⏱️ Tempo de Execução
 O processo completo (API + DB + RPA) leva aproximadamente 2 minutos para ser concluído.
-
-## 📂 Estrutura de Arquivos
-- `/scripts/automation.ts` - Script principal de automação
-- `/src/db/db.json` - Banco de dados JSON
-- `docker-compose.yml` - Configuração dos containers
